@@ -1,0 +1,94 @@
+git help: Mostra vários comandos de forma resumida
+
+git help <comando>: Mostra detalhes de um comando específico
+
+git config --global user.name “Seu Nome”  (define o nome de usuario)
+git config --global user.email “seuemaill@gmail.com”   (Usar o mesmo email do gitlab)
+ 
+Para o repositório atual: --local;
+Para o Usuário: --global;
+Para o Computador: --system
+
+Opcional:
+(primeiro testa code -v)
+git config --global core.editor 'code --wait' -> Vscode para editor padrão (precisa do code no PATH)
+
+
+	Se tudo der certo:
+	git config --global -e -> Abre o arquivo de configuração no vscode
+
+-------------------------------------------------------
+
+
+git init  (inicia um repositorio git)
+
+git status (mostra o status do seu atual repositorio)
+
+git add arquivo/diretório  (adiciona um diretorio/arquivo especifico na stagging area)
+git add --all = git add . (adiciona todos os arquivos/diretorios na stagging area)
+
+git commit -m “Primeiro commit” (salva as mudanças feitas na stagging area, commitando elas)
+
+-------------------------------------------------------
+
+git log (exibe o historico de alterações em ordem cronologica)
+git log arquivo (exibe o log acima, porem, somente para o arquivo desejado)
+git reflog (monitoram quando referências do Git são atualizadas no repositório local)
+
+-------------------------------------------------------
+
+git show (exibe detalhes de objetos git)
+git show <commit> (exibe detalhes de um commit especifico)
+
+-------------------------------------------------------
+
+git diff (compara o que esta na area de trabalho, com o ultimo commit alterado)
+git diff <commit1> <commit2> (compara o commit 1 com o 2)
+
+-------------------------------------------------------
+
+git reset --hard <commit> (desfaz alterações no arquivo rastreado)
+
+-------------------------------------------------------
+
+git branch (lista as branchs atuais)
+git branch -r (lista as branchs remotas)
+git branch -a (lista branchs locais e remotas)
+git branch -d <branch_name> (exclui uma branch especifica)
+git branch -D <branch_name> (exclui uma branch especifica 'na marra', de maneira bruta)
+git branch -m <nome_novo> (cria uma branch com o nome especificado)
+git branch -m <nome_antigo> <nome_novo> (renomeia uma branch especifica)
+
+-------------------------------------------------------
+
+git checkout <branch_name> (navega entre branchs, seleciona a brench especificada)
+git checkout -b <branch_name> (cria uma branch nova e seleciona a mesma)
+
+-------------------------------------------------------
+
+git merge <branch_name> (mescla as mudanças na branch especificada na branch corrente)
+
+-------------------------------------------------------
+
+git clone (clona o repositorio para a pasta desejada)
+git pull (atualiza o repositorio local com a ultima versao da branch remota)
+git push (envia as mudanças commitadas localmente para a branch de origem remota)
+
+-------------------------------------------------------
+
+git remote -v (lista os servidores remotos que o repositorio atual esta utilizando)
+git remote add origin <url> (adiciona um servidor remoto)
+git remote <url> origin (muda a URL do servidor de origem para a nova URL)
+
+--------------------------------------------------------
+
+Documentação do git:
+https://git-scm.com/doc
+
+Playlist GIT:
+https://www.youtube.com/playlist?list=PLucm8g_ezqNq0dOgug6paAkH0AQSJPlIe
+
+Vídeo sobre Git: 
+https://www.youtube.com/watch?v=kB5e-gTAl_s
+
+
